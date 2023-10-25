@@ -65,22 +65,19 @@ a:focus {
   color: #404BBF;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+.container {
+
 }
 
 
-.navigation {
+.navigation-section-header {
   display: flex;
-  align-items: center; /* Вирівнювання по вертикалі */
+  align-items: center;
   justify-content: space-between; /* Рівномірне розташування елементів по горизонталі */
   padding: 20px; /* Додайте бажані внутрішні відступи */
 }
 
-.navigation__list {
+.navigation__list__section {
   list-style: none;
   display: flex;
   gap: 40px; /* Відступи між пунктами меню */
@@ -88,20 +85,24 @@ a:focus {
   padding: 0;
 }
 
-.navigation__item {
+.navigation__item__section {
   margin: 0;
   padding: 0;
 }
 
-.header {
-  list-style: none;
+.header-section-navigation {
   display: flex;
   justify-content: space-between;
-  width: 1128px;
+  list-style: none;
+  width: 1158px;
   height: 100%;
+  border-bottom: 1px solid #e7e9fc;
+  margin: 0 auto;
+  padding: 0 15px;
+
 }
 
-.navigation__link {
+.navigation__link__section {
   text-decoration: none;
   color: #000; /* Колір тексту по вашому вибору */
   font-weight: bold; /* Товщина шрифту по вашому вибору */
@@ -132,7 +133,7 @@ a:focus {
 }
 
 
-.logo {
+.logo-navigation-section {
   font-weight: 700;
   font-size: 1.125rem;
   font-family: 'Raleway', sans-serif;
@@ -143,12 +144,12 @@ a:focus {
   padding-left: 156px;
 }
 
-.logo__span {
+.logo__span_section {
   color: #2e2f42;
   margin-right: 76px;
 }
 
-.logo--white .logo__span {
+.logo--white .logo__span-section {
   color: #f4f4fd;
 }
 
