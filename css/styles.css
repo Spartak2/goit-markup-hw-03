@@ -278,6 +278,7 @@ cursor: pointer;
 
 .team__item {
   background-color: #fff;
+  display: block;
 }
 
 .footer {
