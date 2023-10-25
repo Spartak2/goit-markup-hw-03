@@ -1,4 +1,14 @@
+/* Обнулення маржинів для заголовків і параграфів */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
 
+/* Обнулення маржинів та лівого падіння для списків */
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
 
 :root {
   --color-cloud: #F4F4FD;
@@ -55,13 +65,72 @@ a:focus {
   color: #404BBF;
 }
 
-address {
-  font-style: normal;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-ul {
-  list-style: none;
+
+.navigation {
+  display: flex;
+  align-items: center; /* Вирівнювання по вертикалі */
+  justify-content: space-between; /* Рівномірне розташування елементів по горизонталі */
+  padding: 20px; /* Додайте бажані внутрішні відступи */
 }
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Відступи між пунктами меню */
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1128px;
+  height: 100%;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #000; /* Колір тексту по вашому вибору */
+  font-weight: bold; /* Товщина шрифту по вашому вибору */
+  font-size: 16px; /* Розмір шрифту по вашому вибору */
+}
+
+
+.address {
+  font-style: normal;
+  display: flex;
+  align-items: center; /* Вирівнювання по вертикалі */
+  justify-content: space-between; /* Рівномірне розташування елементів по горизонталі */
+  padding: 20px; /* Додайте бажані внутрішні відступи */
+}
+
+.address__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Відступи між пунктами меню */
+  margin: 0;
+  padding: 0;
+}
+
+.address__item {
+  margin: 0;
+  padding: 0;
+}
+
 
 .logo {
   font-weight: 700;
@@ -71,10 +140,12 @@ ul {
   letter-spacing: .03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-left: 156px;
 }
 
 .logo__span {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .logo--white .logo__span {
@@ -87,24 +158,103 @@ ul {
 }
 
 .hero {
+  width: 100%;
+  height: 600px;
+  top: 72px;
   background-color: #2e2f42;
+  margin: 0 auto;
 }
 
 .hero__title {
   text-align: center;
   color: #ffffff;
+  max-height: 100%;
+  padding-top: 188px;
+  padding-left: 472px;
+  padding-right: 472px;
+}
+
+.priorities {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 156px;
+  list-style: none;
+  margin: 0;
+}
+
+.priorities__item {
+  flex: 1;
+  margin: 120px 24px;
+}
+
+.priorities__content {
+  text-align: center;
+}
+
+.priorities__title {
+  margin-bottom: 8px;
 }
 
 .hero__action {
   line-height: 1.5;
-  letter-spacing: .04em
+  letter-spacing: .04em;
+cursor: pointer;
 }
 
+
+.priorities__description {
+  display: flex;
+  width: 264px;
+  height: 72px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 156px;
+  padding-bottom: 120px;
+  list-style: none;
+  margin: 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px; /* Горизонтальний відступ між всіма елементами */
+  padding: 0 156px; /* Відступи по боках контейнера */
+  margin-bottom: 120px;
+}
+
+.portfolio__item {
+  width: calc(33.333% - 24px); /* Ширина елемента з врахуванням відступу між ними */
+  margin-bottom: 24px; /* Відстань між рядками */
+  text-align: center; /* Вирівнювання вмісту по центру */
+}
+
+.portfolio__item:first-child {
+  margin-left: 0;
+}
+
+.portfolio__item:last-child {
+  margin-right: 0;
+}
+
+.portfolio__item:nth-child(n+4) {
+  margin-top: 48px; /* Відстань між першим рядком і другим рядком картинок */
+}
+
+
 .hero__action {
-  font-weight: 500;
+  display: block;
+  padding: 16px 32px;
+  border: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4D5AE5;
   color: #fff;
-  background-color: #4d5ae5;
-  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 48px;
 }
 
 .hero__action:hover,
@@ -112,12 +262,18 @@ ul {
   background-color: #404bbf;
 }
 
+.hidden {
+  display: none;
+}
+
 .section--background {
   background-color: #F4F4FD;
 }
 
 .section__title {
+  padding-top: 120px;
   text-align: center;
+  padding-bottom: 72px ;
 }
 
 .team__item {
@@ -126,10 +282,17 @@ ul {
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
 }
 
 .footer__promote {
+  padding-left: 156px; /* Відступ падінга вліво */
+  padding-top: 16px;
+  padding-left: 156px;
+  padding-right: 1020px;
+  padding-bottom: 100px;
   --color-footer-text: var(--color-cloud);
 
   color: var(--color-footer-text);
+
 }
