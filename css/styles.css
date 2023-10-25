@@ -227,6 +227,7 @@ cursor: pointer;
 }
 
 .portfolio__item {
+  display: block;
   width: calc(33.333% - 24px); /* Ширина елемента з врахуванням відступу між ними */
   margin-bottom: 24px; /* Відстань між рядками */
   text-align: center; /* Вирівнювання вмісту по центру */
@@ -278,6 +279,10 @@ cursor: pointer;
 
 .team__item {
   background-color: #fff;
+
+}
+
+.team__image {
   display: block;
 }
 
