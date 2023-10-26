@@ -65,7 +65,22 @@ a:focus {
   color: #404BBF;
 }
 
-.header-container {
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1128px;
+  height: 100%;
+  border-bottom: 1px solid #e7e9fc
+}
+
+.page-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,14 +105,6 @@ a:focus {
 .navigation__item {
   margin: 0;
   padding: 0;
-}
-
-.header {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 1128px;
-  height: 100%;
 }
 
 .navigation__link {
