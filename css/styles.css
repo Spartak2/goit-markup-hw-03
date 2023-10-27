@@ -164,21 +164,35 @@ a:focus {
   padding: 0;
 }
 
-.hero {
-  width: 100%;
+.hero__title__section {
   height: 600px;
   top: 72px;
   background-color: #2e2f42;
   margin: 0 auto;
+  padding: 188px 0;
 }
 
-.hero__title {
+.hero__title__section {
   text-align: center;
   color: #ffffff;
-  max-height: 100%;
-  padding-top: 188px;
-  padding-left: 472px;
-  padding-right: 472px;
+  max-width: 496px;
+}
+
+.hero__action__section {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero__action__section:hover,
+.hero__action__section:focus {
+  background-color: #404bbf;
 }
 
 .priorities {
@@ -205,7 +219,7 @@ a:focus {
 .hero__action {
   line-height: 1.5;
   letter-spacing: .04em;
-cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -253,7 +267,7 @@ cursor: pointer;
 }
 
 
-.hero__action {
+.hero__action__section {
   display: block;
   padding: 16px 32px;
   border: 4px;
@@ -265,8 +279,8 @@ cursor: pointer;
   margin-top: 48px;
 }
 
-.hero__action:hover,
-.hero__action:focus {
+.hero__action__section:hover,
+.hero__action__section:focus {
   background-color: #404bbf;
 }
 
