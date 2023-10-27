@@ -77,7 +77,7 @@ a:focus {
   justify-content: space-between;
   width: 1128px;
   height: 100%;
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-header-container {
@@ -87,33 +87,62 @@ a:focus {
   padding: 20px;
 }
 
-.navigation {
+.navigation-page-header {
   display: flex;
   align-items: center; /* Вирівнювання по вертикалі */
   justify-content: space-between; /* Рівномірне розташування елементів по горизонталі */
   padding: 20px; /* Додайте бажані внутрішні відступи */
 }
 
-.navigation__list {
-  list-style: none;
+.navigation__list__header {
   display: flex;
-  gap: 40px; /* Відступи між пунктами меню */
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  gap: 40px;
 }
 
-.navigation__item {
+.navigation__item__header {
+  display: flex;
   margin: 0;
-  padding: 0;
+  padding: 24px 0;
 }
 
-.navigation__link {
+.navigation__link__header {
   text-decoration: none;
   color: #000; /* Колір тексту по вашому вибору */
   font-weight: bold; /* Товщина шрифту по вашому вибору */
   font-size: 16px; /* Розмір шрифту по вашому вибору */
+  margin-right: 40px;
 }
 
+.navigation__item__header:last-child {
+  margin-right: 0;
+}
+
+.navigation__link__header {
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.logo-header-logo {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.17;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
+}
+
+.logo__span__logo {
+  color: #2e2f42;
+  margin-right: 76px;
+}
+
+.logo--white .logo__span__logo {
+  color: #f4f4fd;
+}
 
 .address {
   font-style: normal;
@@ -123,44 +152,16 @@ a:focus {
   padding: 20px; /* Додайте бажані внутрішні відступи */
 }
 
-.address__list {
-  list-style: none;
+.address__list__header {
   display: flex;
+  list-style: none;
   justify-content: space-between;
-  gap: 40px; /* Відступи між пунктами меню */
+  gap: 40px;
+}
+
+.address__item__header {
   margin: 0;
   padding: 0;
-}
-
-.address__item {
-  margin: 0;
-  padding: 0;
-}
-
-
-.logo {
-  font-weight: 700;
-  font-size: 1.125rem;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.17;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  padding-left: 156px;
-}
-
-.logo__span {
-  color: #2e2f42;
-  margin-right: 76px;
-}
-
-.logo--white .logo__span {
-  color: #f4f4fd;
-}
-
-.navigation__link {
-  font-weight: 500;
-  color: #2e2f42;
 }
 
 .hero {
