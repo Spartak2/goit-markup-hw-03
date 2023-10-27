@@ -195,38 +195,55 @@ a:focus {
   background-color: #404bbf;
 }
 
-.priorities {
-  display: flex;
-  justify-content: space-between;
-  padding: 120px 156px;
-  list-style: none;
-  margin: 0;
-}
-
-.priorities__item {
-  flex: 1;
-  margin: 120px 24px;
-}
-
-.priorities__content {
-  text-align: center;
-}
-
-.priorities__title {
-  margin-bottom: 8px;
-}
-
 .hero__action {
   line-height: 1.5;
   letter-spacing: .04em;
   cursor: pointer;
 }
 
+.section {
+  padding: 120px 0;
+}
 
-.priorities__description {
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.priorities__p__description {
   display: flex;
   width: 264px;
   height: 72px;
+}
+
+.priorities__ul__section {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}
+
+.priorities__item__section {
+  width: calc((100% - 72px) / 4);
+}
+
+
+.priorities__h__title {
+  margin-bottom: 8px;
+
 }
 
 .team {
@@ -282,10 +299,6 @@ a:focus {
 .hero__action__section:hover,
 .hero__action__section:focus {
   background-color: #404bbf;
-}
-
-.hidden {
-  display: none;
 }
 
 .section--background {
