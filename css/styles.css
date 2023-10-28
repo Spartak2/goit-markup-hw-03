@@ -78,7 +78,7 @@ img {
 .header {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -88,8 +88,8 @@ img {
 
 .navigation-page-header {
   display: flex;
-  align-items: center; /* Вирівнювання по вертикалі */
-  justify-content: space-between; /* Рівномірне розташування елементів по горизонталі */
+  align-items: center;
+  justify-content: start;
 }
 
 .navigation__list__header {
