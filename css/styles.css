@@ -245,15 +245,6 @@ a:focus {
 
 }
 
-.team {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 156px;
-  padding-bottom: 120px;
-  list-style: none;
-  margin: 0;
-}
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -304,18 +295,38 @@ a:focus {
   background-color: #F4F4FD;
 }
 
-.section__title {
-  padding-top: 120px;
+.our__team__title {
   text-align: center;
-  padding-bottom: 72px ;
+  margin-bottom: 72px;
 }
 
-.team__item {
+.our__team__ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  list-style: none;
+}
+
+.our__team__nema__div {
+  padding: 32px 0;
+}
+
+.our__team__nema {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.our__team__position {
+  text-align: center;
+}
+
+.our__team__li {
+  width: calc((100% - 72px) / 4);
   background-color: #fff;
-
+  border-radius: 0px 0px 4px 4px;
 }
 
-.team__image {
+.our__team__img {
   display: block;
 }
 
