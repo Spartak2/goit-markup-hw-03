@@ -96,6 +96,7 @@ img {
   display: flex;
   list-style: none;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .navigation__item__header {
