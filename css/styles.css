@@ -325,6 +325,7 @@ img {
 }
 
 .our__team__li {
+  display: flex;
   width: calc((100% - 72px) / 4);
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
