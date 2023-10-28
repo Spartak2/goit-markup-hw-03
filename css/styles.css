@@ -65,6 +65,10 @@ a:focus {
   color: #404BBF;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
