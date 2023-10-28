@@ -84,6 +84,7 @@ img {
 
 .page-header-container {
   display: flex;
+  justify-content: start;
 }
 
 .navigation-page-header {
@@ -95,6 +96,7 @@ img {
 .navigation__list__header {
   display: flex;
   list-style: none;
+
   gap: 40px;
   padding: 24px 0;
 }
@@ -133,15 +135,14 @@ img {
 .address {
   display: flex;
   font-style: normal;
-  justify-content: space-between;
   padding: 20px;
 }
 
 .address__list__header {
   display: flex;
   list-style: none;
-  justify-content: space-between;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .address__item__header {
