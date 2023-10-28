@@ -123,7 +123,7 @@ img {
   color: #2e2f42;
 }
 
-.logo-header__footer-logo {
+.logo-header-logo {
   display: flex;
   font-weight: 700;
   font-size: 1.125rem;
@@ -138,10 +138,6 @@ img {
 .logo__span__logo {
   color: #2e2f42;
   margin-right: 76px;
-}
-
-.logo--white .logo__span__logo {
-  color: #f4f4fd;
 }
 
 .address {
@@ -336,6 +332,10 @@ img {
   padding: 100px 0;
 }
 
+.logo--white .logo__span__logo {
+  color: #f4f4fd;
+}
+
 .footer__promote__end {
   max-width: 264px;
   --color-footer-text: var(--color-cloud);
@@ -344,7 +344,15 @@ img {
 
 }
 
-.logo__footer__end {
+.logo-footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.17;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
 }
