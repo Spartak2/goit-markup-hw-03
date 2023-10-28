@@ -105,20 +105,12 @@ img {
 }
 
 .navigation__link__header {
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
   text-decoration: none;
   color: #2E2F42;
-  font-weight: bold;
-  font-size: 16px;
   margin-right: 40px;
-}
-
-.navigation__item__header:last-child {
-  margin-right: 0;
-}
-
-.navigation__link__header {
-  font-weight: 500;
-  color: #2e2f42;
 }
 
 .logo-header-logo {
@@ -155,13 +147,10 @@ img {
 
 .address__item__header {
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .address__link__header {
   display: flex;
-  align-items: center;
 }
 
 .hero__title__section {
