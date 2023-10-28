@@ -86,9 +86,9 @@ img {
 
 .page-header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .navigation-page-header {
@@ -102,6 +102,7 @@ img {
   display: flex;
   list-style: none;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .navigation__item__header {
