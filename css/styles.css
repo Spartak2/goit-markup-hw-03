@@ -224,8 +224,7 @@ a:focus {
 
 .priorities__p__description {
   display: flex;
-  width: 264px;
-  height: 72px;
+  gap: 24px;
 }
 
 .priorities__ul__section {
