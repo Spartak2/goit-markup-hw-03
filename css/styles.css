@@ -79,8 +79,6 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 1128px;
-  height: 100%;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -108,9 +106,9 @@ img {
 
 .navigation__link__header {
   text-decoration: none;
-  color: #000; /* Колір тексту по вашому вибору */
-  font-weight: bold; /* Товщина шрифту по вашому вибору */
-  font-size: 16px; /* Розмір шрифту по вашому вибору */
+  color: #2E2F42;
+  font-weight: bold;
+  font-size: 16px;
   margin-right: 40px;
 }
 
@@ -156,8 +154,14 @@ img {
 }
 
 .address__item__header {
+  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.address__link__header {
+  display: flex;
+  align-items: center;
 }
 
 .hero__title__section {
@@ -345,6 +349,7 @@ img {
 }
 
 .logo-footer-logo {
+  display: flex;
   display: inline-block;
   margin-bottom: 16px;
   font-weight: 700;
