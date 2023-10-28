@@ -310,9 +310,9 @@ img {
   margin-right: 0;
 }
 
-/* .team-name-position {
+.team-name-position {
   padding: 32px;
-} */
+}
 
 .team-list-item-name {
   color: #2E2F42;
@@ -379,7 +379,6 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding: 32px 0;
 }
 
 .portflio-list-item-name {
