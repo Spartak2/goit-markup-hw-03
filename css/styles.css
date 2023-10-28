@@ -92,7 +92,7 @@ img {
   font-weight: 700;
   line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
-  padding-right: 76px;
+  margin-right: 76px;
   text-transform: uppercase;
   display: block;
 }
